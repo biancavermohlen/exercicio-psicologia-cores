@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #f3f5f7;
+}
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Cor de fundo suave e calma (Azul claro) */
+}
+
+header {
+    background-color: #00695c; /* Azul escuro para confiança */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #004d40; /* Azul escuro */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: #f1f1f1; /* Cor neutra clara */
+    color: black;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos do Formulário com psicologia das cores */
+.form-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-row input, .form-row textarea, .form-row select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #b2dfdb; /* Fundo azul claro */
+    color: white; /* Texto branco */
+}
+
+.form-row textarea {
+    height: 120px;
+}
+
+form button {
+    padding: 12px 25px;
+    background-color: #ff7043; /* Botão laranja para ação */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #ff5722; /* Laranja mais forte ao passar o mouse */
+}
+
+/* Responsividade - Para telas pequenas */
+@media (max-width: 600px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-row {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+
+
+header {
+    background-image: url('imagens/beauty-portrait-calm-ginger-woman-with-long-hair-lying-mirror-table-with-bottle-lotion-while-looking.jpg');
+    background-size: cover; /* A imagem cobre o contêiner sem distorcer */
+    background-position: center; /* A imagem se centraliza */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 400px; /* Define a altura do cabeçalho */
+    color: white; /* Ajuste a cor do texto, se necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Estilizando o botão de envio */
+button[type="submit"] {
+    background-color: #ff7f50; /* Cor de fundo laranja */
+    color: white;  /* Cor do texto */
+    padding: 10px 20px;  /* Tamanho do botão */
+    border: none;  /* Removendo a borda padrão */
+    border-radius: 5px;  /* Bordas arredondadas */
+    cursor: pointer;  /* Mostra que é clicável */
+    font-size: 16px;  /* Tamanho da fonte */
+    display: inline-block; /* Garante que o botão tenha espaço no layout */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    margin-top: 15px; /* Adiciona um espaço acima do botão */
+}
+
+/* Estilo do botão quando o mouse passa sobre ele (hover) */
+button[type="submit"]:hover {
+    background-color: #ff5733; /* Cor mais escura quando passa o mouse */
+}
+
+/* Estilo para a seção da equipe */
+.equipe {
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.equipe h2 {
+    color: #2c3e50; /* Cor escura para o título */
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.equipe p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #34495e; /* Cor suave para o texto */
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.equipe img {
+    width: 100%;
+    max-width: 600px; /* Limita o tamanho da imagem */
+    display: block;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #2c3e50;
+}
+section p {
+    color: #2c3e50;
+}
+
+
+

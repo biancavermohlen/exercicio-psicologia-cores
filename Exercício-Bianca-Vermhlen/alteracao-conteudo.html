@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Conteúdo com JavaScript</title>
+    <style>
+        /* Estilo para o botão */
+        button {
+            padding: 10px 20px;
+            background-color: red; /* Botão vermelho para criar urgência */
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Estilo para o título */
+        h1 {
+            color: blue; /* Cor inicial do título */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Bem-vindo ao nosso site!</h1>
+    <button id="botao">Clique para mudar o título</button>
+
+    <script>
+        // Função para alterar o título
+        document.getElementById('botao').addEventListener('click', function() {
+            const titulo = document.getElementById('titulo');
+            titulo.textContent = "Você alterou o título com sucesso!";
+            titulo.style.color = "green"; // Cor verde para algo positivo
+        });
+    </script>
+</body>
+</html>

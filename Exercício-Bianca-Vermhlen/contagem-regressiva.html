@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva</title>
+    <style>
+        #contador {
+            font-size: 50px;
+            font-weight: bold;
+            color: orange; /* Cor laranja para urgência */
+        }
+
+        #mensagem {
+            font-size: 30px;
+            color: green; /* Cor verde após a contagem */
+        }
+    </style>
+</head>
+<body>
+    <div id="contador">10</div>
+    <div id="mensagem"></div>
+
+    <script>
+        let tempo = 10;
+        const contadorElemento = document.getElementById('contador');
+        const mensagemElemento = document.getElementById('mensagem');
+
+        function contagemRegressiva() {
+            if (tempo > 0) {
+                contadorElemento.textContent = tempo;
+                tempo--;
+            } else {
+                contadorElemento.style.display = "none"; // Esconde o contador
+                mensagemElemento.textContent = "Tempo Acabou!";
+                mensagemElemento.style.color = "blue"; // Cor azul após o término
+            }
+        }
+
+        // Chama a função contagemRegressiva a cada 1 segundo (1000 ms)
+        setInterval(contagemRegressiva, 1000);
+    </script>
+</body>
+</html>

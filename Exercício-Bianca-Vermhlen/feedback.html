@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto que Muda de Cor</title>
+    <style>
+        /* Estilo da página */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        /* Estilo do texto */
+        p {
+            font-size: 24px;
+            color: #333; /* Cor preta para o texto inicial */
+        }
+
+        /* Estilo do botão */
+        button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Azul para o botão */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Azul escuro ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p id="texto">Clique no botão para mudar a cor deste texto.</p>
+        <button onclick="mudarCor()">Mudar Cor</button>
+    </div>
+
+    <script>
+        function mudarCor() {
+            const texto = document.getElementById("texto");
+            texto.style.color = "#28a745"; /* Verde para representar sucesso */
+        }
+    </script>
+
+</body>
+</html>

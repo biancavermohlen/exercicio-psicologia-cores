@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e Consulta - Beleza Real</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Contato</h1>
+
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="procedimentos.html">Procedimentos</a></li>
+            <li><a href="contato-consulta.html">Contato e Consulta</a></li>
+        </ul>
+    </nav>
+ 
+    <!-- Formulário de Contato -->
+    <main>
+        <section class="form-section">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para agendar sua consulta ou obter mais informações sobre os nossos tratamentos estéticos.</p>
+            
+            <!-- Formulário -->
+            <form action="enviar_formulario.php" method="POST" class="form-container">
+                <div class="form-row">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="consulta">Gostaria de agendar uma consulta?</label>
+                    <select id="consulta" name="consulta">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Consultas Estéticas | Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+    <!-- Botão de Enviar -->
+    <button type="submit">Enviar</button>
+</form>
